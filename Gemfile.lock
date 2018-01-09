@@ -67,10 +67,10 @@ PLATFORMS
 
 DEPENDENCIES
   cucumber
+  data_magic
   page-object
   rake
   rspec
-  watir
 
 BUNDLED WITH
-   1.15.4
+   1.16.1

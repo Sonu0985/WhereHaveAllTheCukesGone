@@ -3,35 +3,23 @@
 ## Install Bundler
 
 ```bash
-gem install bundler
+~: gem install bundler
+~: gem install testgen
+
 ```
 - Make sure your ruby installation is in your PATH env variable.
 
 ## Use bundler
 
-- Create a new directory
+- Generate File Structure
 
 ```bash
-~: mkdir AdoptAPuppy
-```
-
-- Add a Gemfile to that directory
-
-```bash
-~: cd AdoptAPuppy
-~/AdoptAPuppy: touch Gemfile
-```
-
-Using your favorite text editior or rubymine:
-
-```ruby
-source 'https://rubygems.org'
-
-gem 'watir'
+testgen project PuppyWorkshop
 ```
 
 - Use Bundler to install the dependencies
 
 ```bash
+~: cd PuppyWorkshop
 ~/AdoptAPuppy: bundle install
 ```
