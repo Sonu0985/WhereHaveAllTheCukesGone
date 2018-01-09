@@ -15,7 +15,6 @@ Scenario: Adopt One Puppy
   And I place my order
   Then I should see the message "Thank you for adopting a puppy!"
 
-
 Scenario: Adopting a puppy using a table
   Given I am looking for a puppy to adopt
   When I adopt the first puppy

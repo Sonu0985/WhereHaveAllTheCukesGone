@@ -15,12 +15,11 @@ Scenario: Adopt One Puppy
   And I place my order
   Then I should see the message "Thank you for adopting a puppy!"
 
-
-Scenario: Adopting a puppy using a table
+Scenario: Checking out with a cucumber table
   Given I am looking for a puppy to adopt
-  When I adopt the first puppy
+  And I adopt the first puppy
   And I complete the adoption
-  And I checkout using:
+  When I checkout using:
     | name           | address            | email           | payment_method |
     | Your Name Here | 1151 N Marginal Rd | you@example.com | Credit card    |
   Then I should see the message "Thank you for adopting a puppy!"

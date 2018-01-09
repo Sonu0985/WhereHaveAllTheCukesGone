@@ -16,7 +16,6 @@ And(/^I enter the name "([^"]*)"$/) do |name|
 end
 
 And(/^I enter the address "([^"]*)"$/) do |address|
-  puts address
   @browser.textarea(:id => 'order_address').value = address
 end
 
