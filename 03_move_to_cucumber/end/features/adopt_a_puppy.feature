@@ -6,7 +6,7 @@ Feature: Adopting A Puppy
 
 Scenario: Adopt One Puppy
   Given I am looking for a puppy to adopt
-  When I adopt puppy 1
+  When I adopt the first puppy
   And I complete the adoption
   And I enter the name "Doug Morgan"
   And I enter the address "Cleveland, OH 44113"

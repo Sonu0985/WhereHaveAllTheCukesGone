@@ -2,9 +2,8 @@ Given(/^I am looking for a puppy to adopt$/) do
   @browser.goto 'http://puppies-app.herokuapp.com/'
 end
 
-And(/^I adopt puppy (\d+)$/) do |puppy_number|
-  index = (puppy_number.to_i)-1
-  @browser.button(:value => 'View Details', :index => index).click
+And(/^I adopt the first puppy$/) do
+  @browser.button(:value => 'View Details', :index => 0).click
   @browser.button(:value => 'Adopt Me!').click
 end
 
